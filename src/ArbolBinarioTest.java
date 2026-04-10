@@ -5,7 +5,7 @@ public class ArbolBinarioTest {
 
     @Test
     public void testInsertarYBuscarEncontrado() {
-        ArbolBinario<Asociacion<String, String>> arbol = new ArbolBinario<>();
+        Arbol<Asociacion<String, String>> arbol = new ArbolBinario<>();
         arbol.insertar(new Asociacion<>("maison", "casa"));
         arbol.insertar(new Asociacion<>("chien", "perro"));
 
