@@ -5,7 +5,7 @@ public class Diccionario {
     private Arbol<Asociacion<String, String>> arbol;
 
     public Diccionario() {
-        arbol = new ArbolBinario<>();
+        arbol = new Arbol<>();
     }
 
     public void agregar(String frances, String espanol) {

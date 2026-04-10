@@ -5,7 +5,7 @@ public class ArbolBinarioTest {
 
     @Test
     public void testInsertarYBuscarEncontrado() {
-        Arbol<Asociacion<String, String>> arbol = new ArbolBinario<>();
+        Arbol<Asociacion<String, String>> arbol = new Arbol<>();
         arbol.insertar(new Asociacion<>("maison", "casa"));
         arbol.insertar(new Asociacion<>("chien", "perro"));
 
@@ -16,7 +16,7 @@ public class ArbolBinarioTest {
 
     @Test
     public void testBuscarNoEncontrado() {
-        ArbolBinario<Asociacion<String, String>> arbol = new ArbolBinario<>();
+        Arbol<Asociacion<String, String>> arbol = new Arbol<>();
         arbol.insertar(new Asociacion<>("oui", "si"));
 
         Asociacion<String, String> resultado = arbol.buscar(new Asociacion<>("non", null));
@@ -25,7 +25,7 @@ public class ArbolBinarioTest {
 
     @Test
     public void testInsertarMantieneOrdenBST() {
-        ArbolBinario<Asociacion<String, String>> arbol = new ArbolBinario<>();
+        Arbol<Asociacion<String, String>> arbol = new Arbol<>();
         arbol.insertar(new Asociacion<>("oui", "si"));
         arbol.insertar(new Asociacion<>("maison", "casa"));
         arbol.insertar(new Asociacion<>("ville", "pueblo"));
