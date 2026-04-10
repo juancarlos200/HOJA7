@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        diccionario Diccionario = new Diccionario();
+        Diccionario Diccionario = new Diccionario();
 
         // Leer diccionario.txt
         BufferedReader lectorDic = new BufferedReader(new FileReader("diccionario.txt"));
